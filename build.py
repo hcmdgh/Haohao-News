@@ -33,6 +33,7 @@ def main():
 
                 title = first_line.strip('#').strip()
 
+                file_path = file_path.replace('\\', '/')
                 template += f"[{title}]({file_path})\n\n"
 
     with open('./README.md', 'w', encoding='utf-8') as fp:
