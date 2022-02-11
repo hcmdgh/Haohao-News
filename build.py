@@ -26,6 +26,8 @@ def main():
             template += f"## {day}\n\n"
 
             for file_path in articles[year][day]:
+                print(f"【解析】{file_path}")
+            
                 with open(file_path, 'r', encoding='utf-8') as fp:
                     first_line = fp.readline()
 
